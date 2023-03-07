@@ -1,0 +1,192 @@
+.section_2 {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    height: fit-content;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+
+    .news {
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .section_2_flex_link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #003459;
+            text-transform: capitalize;
+        }
+
+        a {
+            font-size: 14px;
+            color: #003459;
+            padding: 10px 20px;
+            font-weight: 500;
+            border: 1px solid #003459;
+            border-radius: 20px;
+        }
+    }
+
+    .section_2_card_box {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+        margin: autos;
+
+        .section_2_card {
+            height: 378px;
+            width: 280px;
+            background: #FDFDFD;
+            box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 8px 8px 0px;
+
+            .s_2_img_box {
+                width: 100%;
+                height: 264px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    object-fit: cover;
+
+                }
+            }
+
+            .s_2_content_box {
+                padding: 16px;
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #00171F;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #667479;
+                    margin-top: 7px;
+
+                    span {
+                        font-weight: 700;
+                        color: #667479;
+                    }
+                }
+
+                .price {
+                    color: #00171F;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width: 800px) {
+    .section_2 {
+        padding: 60px 50px;
+
+        .section_2_card_box {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            margin: auto;
+            margin-top: 30px;
+            
+            .section_2_card{
+                height: 378px;
+                width: 240px;
+            }
+        }
+    }
+}
+@media(max-width: 600px) {
+    .section_2 {
+        padding: 60px 20px !important;
+
+        .section_2_card_box {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            margin: auto;
+            margin-top: 30px;
+
+            
+            .section_2_card{
+                height: 327px !important;
+                width: 220px !important;
+
+                .s_2_img_box{
+                    height: 169px !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px) {
+    .section_2 {
+        .section_2_card_box {
+            
+            .section_2_card{
+                height: 317px !important;
+                width: 185px !important;
+
+                .s_2_img_box{
+                    height: 169px !important;
+                }
+
+                .s_2_content_box{
+
+                    .name{
+                        line-height: 20px !important;
+                        font-size: 14px !important;
+                    }
+                    .price{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 420px) {
+    .section_2 {
+        padding: 60px 16px !important;
+        .section_2_card_box {
+            
+            .section_2_card{
+                height: 317px !important;
+                width: 145px !important;
+
+                .s_2_img_box{
+                    height: 150px !important;
+                }
+                .s_2_content_box{
+                    padding: 10px;
+
+                    .name{
+                        line-height: 20px !important;
+                        font-size: 14px !important;
+                    }
+                    .price{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
